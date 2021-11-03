@@ -10,9 +10,7 @@ import { ShoppingListComponent } from './shopping-list.component';
   imports: [
     //CommonModule, // for *ngIf and *ngFor
     FormsModule, // as we are working with template driven approch
-    RouterModule.forChild([
-      { path: 'shopping-list', component: ShoppingListComponent },
-    ]),
+    RouterModule.forChild([{ path: '', component: ShoppingListComponent }]),
     SharedModule, //Here we only use CommonModule from shared module
   ],
 })
